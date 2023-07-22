@@ -22,6 +22,7 @@ $('.owl-two').owlCarousel({
     responsive: {
         0: {
             items: 1,
+            stagePadding: 0,
         },
         600: {
             items: 1,
@@ -36,12 +37,12 @@ $('.owl-three').owlCarousel({
     loop: true,
     nav: true,
     items: 3,
-    center: true,
-    autoplay: true,
+    // center: true,
+    autoplay: false,
     margin: 10,
-    stagePadding: 0,
+    stagePadding: 10,
     autoplayTimeout: 4000,
-    responsiveClass: true,
+    // responsiveClass: true,
     responsive: {
         0: {
             items: 1,
@@ -82,17 +83,6 @@ $(document).ready(function () {
         $(this).css("display", "none");
         $(this).siblings(".read-Btn").css("display", "inline");
     });
-    // caraousel zoom
-    // function zoom() {
-    //     $(".owl-item.active.center").find('.maruti-car-img').addClass("maruti-car-img-hover");
-    // } zoom()
-    // setInterval(zoom, 300);
-    // clearTimeout(zoom, 100);
-    // function zoomA() {
-    //     $(".owl-item.active.center").find('.maruti-car-img').removeClass("maruti-car-img-hover");
-    // } zoomA()
-    // setInterval(zoomA, 2000);
-
 
     // form-select validation
     $(".form-select").prop("selectedIndex", -1);
