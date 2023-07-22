@@ -239,7 +239,8 @@ header {
     color: #d08c21;
 }
 
-.maruti-car img {
+.maruti-car img,
+.maruti-car .owl-item.center img {
     margin: auto;
     cursor: pointer;
     opacity: .5;
@@ -247,7 +248,8 @@ header {
     transform: scale(0.6);
 }
 
-.maruti-car .owl-item.active.center img {
+.maruti-car .owl-item.active.center img,
+.maruti-car .owl-item.center img {
     transform: scale(.9);
     opacity: 1;
 }
@@ -313,6 +315,7 @@ header {
 .true-value {
     background-color: var(--light-grey);
     padding: 3.5% 0;
+    text-align: -webkit-center;
 }
 
 .true-value div .row:first-child {
@@ -324,7 +327,7 @@ header {
 }
 
 .true-value .card-body div p {
-    font-size: .9rem;
+    font-size: 14px;
 }
 
 .true-value .card {
@@ -492,6 +495,10 @@ footer .footer-social:hover {
         max-width: 53%;
     }
 
+    .true-value .card-body div p {
+        font-size: 12px;
+    }
+
     .trust-exper-text1 div {
         padding: 0 8px 0 0;
     }
@@ -600,6 +607,8 @@ footer .footer-social:hover {
         font-size: 13.5px;
     }
 
+
+
     .true-value .row>* {
         padding: 0 !important;
     }
@@ -683,7 +692,7 @@ footer .footer-social:hover {
     }
 
     .banner .owl-carousel .owl-item img {
-        height: 12rem
+        height: 10rem
     }
 
     .explore-icons1 img {

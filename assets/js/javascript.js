@@ -26,7 +26,7 @@ $('.owl-two').owlCarousel({
         },
         600: {
             items: 1,
-            stagePadding: 0,
+            stagePadding: 150,
         },
         1000: {
             items: 1,
