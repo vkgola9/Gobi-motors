@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* font-family: 'DM Sans', sans-serif; 
+font-family: 'Open Sans', sans-serif;*/
+@import 'animate.css';
+
+*,
+p,
+ul,
+li,
+span {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Open Sans', sans-serif !important; */
+}
+
+:root {
+    --light-grey: #f8f8f8;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.p-1 {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* **********************************************************for- topbar ****************************************************************** */
+
+.for-topbar {
+    background: url(../images/bg_group.png) no-repeat;
+    width: 100%;
+    padding: 5px 0;
+    text-align: right;
+}
+
+.logo img {
+    width: 14rem;
+}
+
+.topbar ul li {
+    padding: 0 0 0 30px;
+    display: inline;
+}
+
+.topbar ul li a:link,
+.topbar ul li a:visited {
+    color: beige;
+}
+
+.topbar ul li a:hover {
+    color: #d08c21;
+}
+
+/* **********************************************************for-header ****************************************************************** */
+header {
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 20%;
+}
+
+.header-text {
+    width: 55%;
+}
+
+.for-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text ul li a:link,
+.header-text ul li a:visited {
+    color: rgb(4, 4, 4);
+}
+
+.header-text ul li a:hover {
+    color: #d08c21;
+}
+
+.header-text ul li:nth-child(5) a {
+    padding: 8px 18px;
+    background-color: black;
+    color: beige;
+    border: 1px solid transparent;
+}
+
+.header-text ul li:nth-child(5) a:hover {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid black;
+}
+
+/* **********************************************************banner***************************************************************** */
+
+.banner .owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 8px;
+}
+
+.banner .owl-theme .owl-dots .owl-dot.active span,
+.banner .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: white !important;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .owl-dots {
+    margin-top: 0px !important;
+    top: 93%;
+    right: 5%;
+    display: inline;
+    position: absolute;
+}
+
+/* **********************************************************for-star***************************************************************** */
+.for-star {
+    padding: 50px 0 85px;
+}
+
+.star {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.star img {
+    max-width: 5.5rem;
+    padding: 10px 0 10px;
+}
+
+/* **********************************************************for-explore****************************************************************** */
+.for-explore {
+    padding: 50px 0;
+    background-color: var(--light-grey);
+}
+
+.explore-icons {
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.explore p {
+    text-align: center;
+}
+
+.explore-icons1 img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+}
+
+.explore-icons1:hover img {
+    animation: icon 2s linear infinite alternate-reverse;
+    cursor: pointer;
+}
+
+@keyframes icon {
+    0% {
+        transform: rotate(-40deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+.explore-icons1 a {
+    color: #000;
+}
+
+.explore-icons1:hover a {
+    cursor: pointer;
+    color: #d08c21;
+}
+
+/* **********************************************************for-maruti****************************************************************** */
+.for-maruti {
+    margin: 80px 0 0 0;
+    background-color: var(--light-grey);
+    padding: 50px 0;
+}
+
+.maruti {
+    padding: 0 0 30px;
+}
+
+.maruti div p:nth-child(2) {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.maruti div p:nth-child(3) {
+    text-align: end;
+    padding: 20px 0 0;
+}
+
+.maruti div p:nth-child(3) a {
+    color: #000;
+    font-size: 14px;
+}
+
+.maruti div p:nth-child(3) a:hover {
+    color: #d08c21;
+}
+
+.maruti-car img {
+    margin: auto;
+    /* max-width: 500px; */
+    cursor: pointer;
+    opacity: .5;
+    transition: all .9s;
+    transform: scale(0.6);
+}
+
+.owl-item.active.center img {
+    transform: scale(.9);
+    opacity: 1;
+}
+
+.maruti-car div:nth-child(1) {
+    text-align: center;
+}
+
+.maruti-car div div h3:nth-child(1) a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.maruti-car div div p:nth-child(2) {
+    padding: 30px 0 7px;
+}
+
+.maruti-car div div p:nth-child(1n+3) {
+    padding: 0px 0 7px;
+}
+
+.maruti-car div div p:nth-child(1n+1) a {
+    color: #000;
+}
+
+.maruti-car div div p:nth-child(1n+1) a:hover {
+    color: #d08c21;
+}
+
+/* **********************************************************for-trust****************************************************************** */
+.trust {
+    display: flex;
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.trust-left {
+    max-width: 45%;
+    margin: 0 100px 0 0;
+}
+
+.trust-right {
+    max-width: 50%;
+}
+
+.trust-exper-text1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.trust-exper-text1 div {
+    width: calc(50%);
+    padding: 0 45px 0 0;
+}
+
+.trust-exper-text1 div h4 {
+    padding: 0px 0 8px 0;
+}
+
+/* **********************************************************true-value****************************************************************** */
+.true-value {
+    background-color: var(--light-grey);
+    padding: 3.5% 0;
+}
+
+.true-value div .row:first-child {
+    padding: 0 0 8% 0;
+}
+
+.true-value .card-body div span {
+    font-size: .7rem;
+}
+
+.true-value .card-body div p {
+    font-size: .9rem;
+}
+
+.true-value .card {
+    width: 93%;
+}
+
+/* **********************************************************buy-quality****************************************************************** */
+.buy-quality a {
+    padding: 0.5rem 2.2rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid;
+    border-radius: 9px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.buy-quality a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.buy-quality p {
+    margin: 0 0 2rem 0;
+}
+
+.buy-quality .buy-quality-two img {
+    -webkit-transform: scaleX(-1);
+    transform: scalex(-1);
+    filter: hue-rotate(122deg);
+}
+
+.buy-quality-one {
+    background-color: #1f4586;
+    color: #ffffff;
+}
+
+/* **********************************************************customer****************************************************************** */
+.customer-two {
+    background: url(https://www.goyalmotors.com/images/menu/new/Path60.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.customer-two p {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.customer .owl-four.owl-carousel img {
+    height: 20rem;
+    object-fit: fill;
+}
+
+.customer .owl-nav,
+.true-value .owl-nav {
+    text-align: center;
+}
+
+.customer .owl-nav button span,
+.true-value .owl-nav button span {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: 0;
+    transform: scale(1);
+}
+
+.customer .owl-nav button span:hover,
+.true-value .owl-nav button span:hover {
+    color: #999;
+}
+
+/* **********************************************************footer-form****************************************************************** */
+
+.footer-form input[type=text],
+.footer-form input[type=email],
+.footer-form input[type=tel],
+select {
+    background: #212529 !important;
+    border: 0px !important;
+    border-bottom: 1px solid white !important;
+    border-radius: initial !important;
+    padding: 6px 0;
+    color: #ffffff !important;
+    box-shadow: none;
+}
+
+.footer-form input::placeholder {
+    color: #ffffff80;
+}
+
+.footer-form input:focus,
+select:focus {
+    box-shadow: none !important;
+}
+
+.form-select,
+option {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' id='arrow' x='0' y='0' version='1.1' viewBox='0 0 29 29' xml:space='preserve'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' d='m20.5 11.5-6 6-6-6' class='colorStroke000000 svgStroke'%3e%3c/path%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    font-size: .9rem;
+}
+
+/* **********************************************************footer****************************************************************** */
+footer a,
+.footer-bar a {
+    color: #fff;
+    transition: .5s ease;
+}
+
+footer a:hover {
+    color: #b1abab;
+    letter-spacing: 1px;
+}
+
+footer .footer-social {
+    width: 2.5rem;
+}
+
+footer .footer-social:hover {
+    transform: scale(1.1);
+}
+
+.footer-bar a:hover {
+    color: #b1abab;
+}
+
+
+
+
+/* responsiv */
+
+@media (max-width: 992px) {
+    .logo img {
+        width: 10rem;
+    }
+
+    .header-text ul li:nth-child(5) a {
+        padding: 4px 12px;
+    }
+
+    .header-text {
+        width: 68%;
+    }
+
+    .star img {
+        max-width: 4.5rem;
+    }
+
+    .maruti div p:nth-child(3) {
+        padding: 0;
+    }
+
+    .maruti {
+        padding: 0;
+    }
+
+    .trust-left {
+        max-width: 35%;
+    }
+
+    .trust-right {
+        max-width: 53%;
+    }
+
+    .trust-exper-text1 div {
+        padding: 0 8px 0 0;
+    }
+
+    .customer-two p {
+        padding: 0 !important;
+    }
+
+    .customer-two {
+        background-size: 15rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    p,
+    ul,
+    li,
+    span,
+    a {
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 8rem;
+    }
+
+    .header-text ul li:nth-child(5) a {
+        padding: 3px 9px;
+    }
+
+    .header-text a {
+        font-size: 12.5px;
+    }
+
+    .topbar a {
+        font-size: 12.5px !important;
+    }
+
+    .banner .owl-dots {
+        top: 80%;
+    }
+
+    .banner .owl-theme .owl-dots .owl-dot span {
+        width: 25px;
+        height: 8px;
+    }
+
+    .topbar ul li {
+        padding: 0 0 0 8px;
+    }
+
+    .star img {
+        max-width: 3.5rem;
+    }
+
+    .for-star {
+        padding: 20px 0 27px;
+    }
+
+    .for-explore {
+        padding: 30px 0 20px;
+    }
+
+    .for-maruti {
+        margin: 50px 0 0 0;
+        padding: 40px 0 30px;
+    }
+
+    .maruti-car div div p:nth-child(2) {
+        padding: 10px 0 7px;
+    }
+
+    .trust {
+        padding: 35px 0;
+    }
+
+    .trust-left img {
+        width: 150%;
+    }
+
+    .buy-quality .h2 {
+        text-align: center;
+        padding: 0 0 10px;
+    }
+
+    .customer-two p {
+        padding: 30px 0 0 0 !important;
+    }
+
+    .customer-two {
+        background-size: 10rem;
+    }
+
+    .customer .owl-nav,
+    .true-value .owl-nav {
+        text-align: center;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-social {
+        width: 2rem;
+    }
+
+    footer .h5 {
+        font-size: .95rem;
+    }
+
+    footer a {
+        font-size: .75rem;
+    }
+
+    footer .small,
+    small,
+    span,
+    a {
+        font-size: 0.875em;
+    }
+
+    .footer-bar .row,
+    .footer-bar .small.text-end.col-12.col-md-6 {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    p,
+    ul,
+    li,
+    span,
+    a,
+    .form-check-label,
+    label {
+        font-size: 11px;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+    }
+
+    .p-1 {
+        font-size: 13px;
+    }
+
+    .h2,
+    h2 {
+        font-size: calc(1rem + .9vw);
+    }
+
+    .h4,
+    h4 {
+        font-size: 16px;
+    }
+
+    .topbar a {
+        font-size: 8.5px !important;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+
+    .banner .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 5px;
+    }
+
+    .banner .owl-carousel .owl-item img {
+        height: 12rem
+    }
+
+    .explore-icons1 img {
+        max-width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .explore-icons {
+        width: 95%;
+    }
+
+    .star {
+        width: 85%;
+    }
+
+    .star img {
+        max-width: 3rem;
+    }
+
+    .trust {
+        flex-direction: column;
+    }
+
+    .trust-left {
+        max-width: 60%;
+    }
+
+    .trust-right {
+        max-width: 100%;
+        padding: 0 0px 0 20px;
+    }
+
+    .true-value .p-1 {
+        padding: 0px 0 16px 0 !important;
+    }
+
+    .true-value {
+        text-align: -webkit-center;
+    }
+
+    .true-value .card-body div span {
+        font-size: .5rem;
+    }
+
+    .true-value .card-body div p {
+        font-size: .6rem;
+    }
+
+    a.w-50.btn.rounded-pill.bg-danger.text-white {
+        font-size: 10px;
+        width: 35% !important;
+    }
+
+    .buy-quality .overflow-hidden {
+        padding: 1.5rem 0 !important;
+    }
+
+    .customer .owl-four.owl-carousel img {
+        height: 12rem;
+        object-fit: cover;
+    }
+
+    option {
+        font-size: .7rem;
+    }
+
+    .footer-form button {
+        font-size: .67rem;
+    }
+
+    footer a {
+        font-size: .65rem;
+    }
+
+    footer .h5 {
+        font-size: .757rem;
+    }
+
+    footer .footer-social {
+        width: 1.5rem;
+    }
+
+    .footer-bar small {
+        font-size: 0.75em;
+    }
+}
