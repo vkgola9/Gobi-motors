@@ -399,6 +399,19 @@ header {
 
 .true-value .card {
     width: 93%;
+    margin: 20px 0;
+    transition: .5s ease-in-out;
+}
+
+.true-value .card:hover {
+    transform: scale(1.05);
+    /* border-radius: 50px; */
+}
+
+.true-value a.w-50.btn.rounded-pill.bg-danger.text-white:hover {
+    background: white !important;
+    color: red !important;
+    border: 1px solid;
 }
 
 /* **********************************************************buy-quality****************************************************************** */
