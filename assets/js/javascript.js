@@ -90,4 +90,32 @@ $(document).ready(function () {
 
     var a = new Date().getFullYear();
     $("#year").html(a);
+
+
+    // header-toggle
+
+    $(".nav-button").click(function () {
+        $(".mobile-nav").toggleClass("mobile-nav-toggle")
+    });
+
+    // header sticky
+    $(window).scroll(function () {
+        if (window.scrollY >= 500) {
+            $("header").addClass('header-sticky');
+            $(".for-topbar").css('display', "none");
+            $(".top i").addClass('sticky-to');
+        }
+        else if (window.scrollY <= 450) {
+            $("header").removeClass('header-sticky');
+            $(".for-topbar").css('display', "block");
+            $(".top i").removeClass('sticky-to');
+        }
+        $("section , footer").click(function () {
+            $(".mobile-nav").removeClass("mobile-nav-toggle")
+        });
+
+        if ($(window).scrollTop() >= 10) {
+            $(".mobile-nav").removeClass("mobile-nav-toggle")
+        }
+    });
 })
