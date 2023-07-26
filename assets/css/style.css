@@ -347,9 +347,8 @@ header {
     color: #d08c21;
 }
 
-.owl-carousel .owl-item img {
-    display: block;
-    width: 80%;
+.maruti-car .owl-item.center img {
+    width: 80% !important;
 }
 
 /* **********************************************************for-trust****************************************************************** */
@@ -884,6 +883,12 @@ footer .footer-social:hover {
     a.w-50.btn.rounded-pill.bg-danger.text-white {
         font-size: 10px;
         width: 35% !important;
+    }
+
+    .for-maruti .owl-theme .owl-nav.disabled+.owl-dots {
+        top: 85%;
+        position: absolute !important;
+        left: 37%;
     }
 
     .buy-quality .overflow-hidden {
