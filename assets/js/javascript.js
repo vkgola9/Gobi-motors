@@ -16,7 +16,7 @@ $('.owl-two').owlCarousel({
     // nav: true,
     smartSpeed: 700,
     center: true,
-    stagePadding: 300,
+    stagePadding: 350,
     autoplay: true,
     autoplayTimeout: 4000,
     responsive: {
