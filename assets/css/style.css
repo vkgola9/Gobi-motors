@@ -796,6 +796,7 @@ footer .footer-social:hover {
     .h2,
     h2 {
         font-size: calc(1rem + .9vw);
+        text-align: center !important;
     }
 
     .h4,
